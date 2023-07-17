@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en" style="background-color: beige;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        * {
+    /* margin: 0;
+    padding: 0; */
+    box-sizing: border-box;
+       }
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    /* background-color: #1b1a1a; */
+    background-image: url('https://images.unsplash.com/photo-1545164027-0d5617cef5fc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8c3RhciUyMGJhY2tncm91bmR8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60');
+    color: #fff;
+    padding: 20px 0;
+    border-radius: 14px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    height: 48px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+
+}
+
+.nav-links li {
+    margin-left: 15px;
+    float: left;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+}
+.nav-links a:hover{
+    color:brown;
+}
+.container .nav-links{
+    padding: 2px 2px;
+    margin: 15px auto;
+}
+main {
+    padding: 40px 0;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+section h2 {
+    margin-bottom: 20px;
+    color: rgb(122, 27, 27);
+}
+
+footer {
+    background-image: url('https://images.unsplash.com/photo-1545164027-0d5617cef5fc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8c3RhciUyMGJhY2tncm91bmR8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60');
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+form button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #555;
+}
+#about p{
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.project{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+.timeline h2,.skills h2{
+    margin-left: -38px;
+    font-weight: bold;
+    color: rgb(122, 27, 27);
+}
+.search input{
+    display: inline-block;
+    width: 155px;
+    margin: auto;
+    padding-right: 30px;
+    margin-top: 0px;
+    border-radius: 7px;
+    height:24px;
+}
+.timeline {
+    max-width: 800px;
+    margin: 50px auto;
+    position: relative;
+}
+
+.timeline-item {
+    border-left: 2px solid #007bff; /* Change the color as needed */
+    padding: 20px;
+    position: relative;
+}
+
+.timeline-content {
+    margin-left: 30px;
+}
+
+.timeline-date {
+    font-weight: bold;
+    color: #0c345f; /* Change the color as needed */
+}
+
+.timeline h3 {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.timeline p {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+
+/* Alternate positioning for even numbered items */
+.timeline-item:nth-child(even) {
+    border-left-color: #7e073f; /* Change the color as needed */
+}
+
+.timeline-item:nth-child(even) .timeline-content {
+    margin-left: 0;
+    margin-right: 30px;
+    text-align: right;
+}
+.skills li{
+    font-weight: bold;
+}
+
+
+</style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <div class="logo"><h3>Safalya Roy Chowdhury</h3></div>
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="https://linktr.ee/safalyaroy" target="_blank">Socials</a></li>
+                    <div class="search">
+                    <li>
+                        <input type="text" name="search" id="search" placeholder="Search keyword">
+                    </li>
+                    </div>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="about">
+            <div class="container">
+                <h2>About Me</h2>
+                <p>I'm a sophomore at Meghnad Saha Institute of Technology doing B.Tech in Computer Science and Engineering(specilization in Data Science). Coding is something I'm very passionate about and I invest my leisure time in reading books and listening to music.</p>
+            </div>
+        </section>
+
+        <section id="portfolio">
+            <div class="container">
+                <h2>Projects</h2>
+                <ul class="project">
+                    <li>Simple portfolio website using HTML,CSS</li>
+                    <li>Website for the gym i used to go to</li>
+                    <li>Simple calculator using Java</li>
+                </ul>
+            </div>
+        </section>
+        <section id="skills">
+            <div class="container">
+                <ul class="skills">
+                    <h2>Skills</h2>
+                    <li>Front-end Website Development</li>
+                    <li>Python</li>
+                    <li>Java</li>
+                    <li>Major strength in communication skills</li>
+                </ul>
+            </div>
+        </section>
+        <div class="timeline">
+            <h2>Education</h2>
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h3>Bachelor's Degree in Computer Science</h3>
+                    <p class="timeline-date">August 2022 - June 2026</p>
+                    <p>Meghnad Saha Institute of Technology, Kolkata</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h3>High School (ICSE+ISC)</h3>
+                    <p class="timeline-date">May 2011 - June 2022</p>
+                    <p>National Public School, Kolkata</p>
+                </div>
+            </div>
+            <!-- Add more education entries as needed -->
+        </div>
+
+        <section id="contact">
+            <div class="container">
+                <h2>Contact Me</h2>
+                <form id="contact-form">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" placeholder="Your Message" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    
+
+    <footer>
+        <div class="container">
+            &copy; 2023 Safalya's Portfolio. All rights reserved.
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
